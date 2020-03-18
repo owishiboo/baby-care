@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="431.0" prefWidth="748.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="447.0" fitWidth="766.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/StanDaMan809%20-%20Hobbyist,%20Digital%20Artist%20_%20DeviantArt.png" />
+         </image></ImageView>
+      <AnchorPane layoutX="384.0" layoutY="18.0" prefHeight="395.0" prefWidth="368.0" style="-fx-background-color: #F1979F;">
+         <children>
+            <Label layoutX="26.0" layoutY="44.0" prefHeight="107.0" prefWidth="293.0" text="Enter Your Email to Get Started &#10;Now!&#10;">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="280.0" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: #FADCDF;" text="Login">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField focusColor="#d91327" layoutX="48.0" layoutY="198.0" opacity="0.49" prefHeight="41.0" prefWidth="258.0" promptText="enter your email" unFocusColor="#9e9393">
+               <font>
+                  <Font name="Elephant Italic" size="16.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <Label layoutX="45.0" layoutY="49.0" opacity="0.32" prefHeight="41.0" prefWidth="286.0" style="-fx-background-color: #FADCDF;" text="A Regular Care for Your Child.">
+         <font>
+            <Font name="Century Gothic" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
