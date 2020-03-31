@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: #EFD9E1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.WelcomePageController">
+   <children>
+      <ImageView fitHeight="520.0" fitWidth="760.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/font%20page.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="500.0" prefWidth="675.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="572.0" layoutY="471.0" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="190.0" ripplerFill="#653b3f" stylesheets="@homepage.css" text="Click here to get started " textFill="#653b3f">
+               <font>
+                  <Font name="Harrington" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-font" />
+                  <String fx:value="hover-hand" />
+                  <String fx:value="fn-14" />
+               </styleClass>
+            </JFXButton>
+         </children>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </AnchorPane>
+   </children>
+</StackPane>

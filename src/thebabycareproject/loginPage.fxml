@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: FCE4EC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.LoginPageController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="431.0" minWidth="10.0" prefWidth="392.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="549.0" minWidth="10.0" prefWidth="393.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" prefHeight="546.0" prefWidth="477.0" GridPane.columnIndex="1">
+         <children>
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="240.0" styleClass="fn-24" stylesheets="@homepage.css" text="Sign in your account" textFill="#42070b">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <VBox alignment="TOP_CENTER" prefHeight="93.0" prefWidth="4.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="138.0" prefWidth="477.0">
+               <children>
+                  <JFXTextField fx:id="email" alignment="CENTER" focusColor="#42070b" prefHeight="40.0" prefWidth="380.0" promptText="Enter email" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <Label fx:id="label" prefHeight="40.0" prefWidth="290.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="117.0" prefWidth="477.0">
+               <children>
+                  <JFXTextField fx:id="password" alignment="CENTER" focusColor="#42070b" prefHeight="40.0" prefWidth="380.0" promptText="Enter  password " styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <Label fx:id="labelPass" prefHeight="40.0" prefWidth="290.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="108.0" prefWidth="477.0" stylesheets="@homepage.css">
+               <children>
+                  <JFXButton buttonType="RAISED" onAction="#signin" prefHeight="40.0" prefWidth="100.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-16" stylesheets="@homepage.css" text="Sign in" textFill="#42070b" />
+                  <Label fx:id="noAccount" prefHeight="40.0" prefWidth="380.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets top="20.0" />
+         </opaqueInsets>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/019-child-2.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <JFXButton buttonType="RAISED" onAction="#signup" prefHeight="40.0" prefWidth="300.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-16" stylesheets="@homepage.css" text="Do not have an account? Sign up now" textFill="#42070b">
+               <VBox.margin>
+                  <Insets top="175.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
