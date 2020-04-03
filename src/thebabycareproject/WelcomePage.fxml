@@ -13,7 +13,7 @@
    <children>
       <ImageView fitHeight="520.0" fitWidth="760.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/font%20page.jpg" />
+            <Image url="@../image/font page.jpg" />
          </image>
       </ImageView>
       <AnchorPane prefHeight="500.0" prefWidth="675.0">
