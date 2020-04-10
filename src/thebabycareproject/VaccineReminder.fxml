@@ -2,9 +2,10 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXDatePicker?>
-<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
@@ -12,23 +13,28 @@
 
 <StackPane prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.VaccineReminderController">
    <children>
-      <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: #fce4ec;">
+      <VBox alignment="CENTER_LEFT" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: #fce4ec;">
          <children>
-            <HBox prefHeight="190.0" prefWidth="785.0">
+            <HBox alignment="CENTER" prefHeight="190.0" prefWidth="785.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="115.0" prefWidth="735.0" styleClass="fn-24" stylesheets="@homepage.css" text="Childhood vaccines are important for your child. We have a &#10;special feature for you to make your task easier. So from now &#10;on don't forget to get the vaccines timely!" textFill="#42070b">
-                     <font>
-                        <Font name="Corbel Light" size="25.0" />
-                     </font>
+                  <ImageView fitHeight="75.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
-                        <Insets left="50.0" top="20.0" />
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/043-baby-1.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="115.0" prefWidth="681.0" styleClass="fn-24" stylesheets="@homepage.css" text="Childhood vaccines are important for your child. We have a &#10;special feature for you to make your task easier. So from now &#10;on don't forget to get the vaccines timely!" textFill="#42070b">
+                     <HBox.margin>
+                        <Insets top="20.0" />
                      </HBox.margin>
                   </Label>
                </children>
             </HBox>
-            <HBox prefHeight="150.0" prefWidth="785.0">
+            <HBox prefHeight="97.0" prefWidth="785.0">
                <children>
-                  <Label contentDisplay="RIGHT" prefHeight="79.0" prefWidth="735.0" styleClass="fn-16" stylesheets="@homepage.css" text="Enter your email and add date and time for next vaccines.&#10;We'll use the time to send you an alert!  ." textFill="#42070b">
+                  <Label contentDisplay="RIGHT" prefHeight="80.0" prefWidth="735.0" styleClass="fn-16" stylesheets="@homepage.css" text="Enter your email and add date and time for next vaccines.&#10;We'll use the time to send you an alert!  ." textFill="#42070b">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -41,22 +47,7 @@
                   <Insets bottom="50.0" top="20.0" />
                </VBox.margin>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="785.0">
-               <children>
-                  <Label prefHeight="45.0" prefWidth="95.0" styleClass="fn-24" stylesheets="@homepage.css" text="Email :" textFill="#42070b">
-                     <HBox.margin>
-                        <Insets left="50.0" />
-                     </HBox.margin>
-                  </Label>
-                  <JFXTextField fx:id="txt_email" focusColor="#42070b" opacity="0.5" prefHeight="35.0" prefWidth="260.0" promptText="put a valid email" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9" />
-                  <Label fx:id="label" prefHeight="42.0" prefWidth="359.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
-                     <HBox.margin>
-                        <Insets left="20.0" />
-                     </HBox.margin>
-                  </Label>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="785.0">
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="785.0">
                <children>
                   <Label prefHeight="45.0" prefWidth="95.0" styleClass="fn-24" stylesheets="@homepage.css" text="Date :" textFill="#42070b">
                      <HBox.margin>
@@ -71,7 +62,7 @@
                   </Label>
                </children>
                <VBox.margin>
-                  <Insets bottom="10.0" top="20.0" />
+                  <Insets bottom="10.0" />
                </VBox.margin>
             </HBox>
             <HBox alignment="BOTTOM_LEFT" prefHeight="60.0" prefWidth="785.0">
@@ -84,7 +75,7 @@
                         <Insets left="50.0" />
                      </HBox.margin>
                      <children>
-                        <JFXButton buttonType="RAISED" onAction="#initialize" prefHeight="45.0" prefWidth="118.0" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Save" textFill="#42070b">
+                        <JFXButton buttonType="RAISED" onAction="#initialize" prefHeight="50.0" prefWidth="118.0" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Save" textFill="#42070b">
                            <VBox.margin>
                               <Insets bottom="5.0" />
                            </VBox.margin>

@@ -13,7 +13,7 @@ public class Job1 implements Job{
         try {
             System.out.println("Job1 --->>> Time is " + new Date());
             
-            EmailUtil.sendMail(email);
+            EmailUtil.sendMail(LoginPageController.email_txt);
         } catch (Exception ex) {
             Logger.getLogger(Job1.class.getName()).log(Level.SEVERE, null, ex);
         }

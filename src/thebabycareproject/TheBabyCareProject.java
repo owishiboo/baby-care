@@ -20,7 +20,7 @@ public class TheBabyCareProject extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("WelcomePage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
         
         Scene scene = new Scene(root);
         

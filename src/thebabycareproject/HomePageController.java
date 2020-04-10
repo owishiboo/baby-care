@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package thebabycareproject;
 import java.io.IOException;
 import java.net.URL;
@@ -14,12 +9,14 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 public class HomePageController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
-    }  
+    } 
     @FXML
     public void foodChart(ActionEvent event) throws IOException{
         Parent paneFoodChart = FXMLLoader.load(getClass().getResource("foodChart.fxml"));
@@ -49,5 +46,21 @@ public class HomePageController implements Initializable {
          Stage stageFunList = (Stage) ((Node) event.getSource()).getScene().getWindow();
          stageFunList.setScene(sceneFunList);
          stageFunList.show();
+    }
+    @FXML
+    void logOut(ActionEvent event) throws IOException{
+       Parent pane = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
+         Scene home_page = new Scene(pane);
+         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+         stage.setScene(home_page);
+         stage.show();
+    }
+    @FXML
+    void profile_settings(ActionEvent event) throws IOException{
+        Parent pane = FXMLLoader.load(getClass().getResource("Profile.fxml"));
+         Scene home_page = new Scene(pane);
+         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+         stage.setScene(home_page);
+         stage.show();
     }
 }
