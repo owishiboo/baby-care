@@ -7,6 +7,8 @@ import java.util.Properties;
 import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import static thebabycareproject.SigninController.flag;
+import static thebabycareproject.SigninController.varification_code;
 
 public class EmailUtil{
     public static TimerTask sendMail(String recepient) throws Exception {
@@ -35,10 +37,18 @@ public class EmailUtil{
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(myAccountEmail));
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(recepient));
-            message.setSubject("Vaccine time!");
-            String htmlCode = "<h1> TAKE CARE OF YOU AND YOUR CHILD! </h1> <br/> <h2><b>It's time to get vaccine for your child. Hope you get it done. </b></h2>";
-            message.setContent(htmlCode, "text/html");
-            return message;
+            message.setSubject("Baby Care");
+            String htmlCode_for_vaccine = "<h1> TAKE CARE OF YOU AND YOUR CHILD! </h1> <br/> <h2><b>It's time to get vaccine for your child. Hope you get it done. </b></h2>";
+            String htmlCode_for_verification = "<h1> VERIFICATION CODE </h1> <br/> <h2><b>Welcome to baby care. Your code is "+varification_code+". Please enter it to the required field.</b></h2>";
+            if(flag==5){
+                flag=0;
+                message.setContent(htmlCode_for_verification, "text/html");
+                return message;
+            }
+            else {
+                message.setContent(htmlCode_for_vaccine, "text/html");
+                return message;
+            }
         } catch (MessagingException ex) {
             Logger.getLogger(EmailUtil.class.getName()).log(Level.SEVERE, null, ex);
         }

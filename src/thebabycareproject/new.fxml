@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="560.0" fitWidth="785.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/page.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="560.0" prefWidth="415.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="395.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="462.0" minHeight="10.0" prefHeight="250.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="402.0" minHeight="0.0" prefHeight="243.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#bmi" prefHeight="170.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: #FC9D9D;" stylesheets="@homepage.css" text="Get BMI" textFill="#42070b" GridPane.rowIndex="1">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-24" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0">
+                           <image>
+                              <Image url="@../image/BMI.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#vaccineReminder" prefHeight="170.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: #FC9D9D;" stylesheets="@homepage.css" text="Vaccine&#10;Reminder" textFill="#42070b" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-24" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Vaccine.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#foodChart" prefHeight="170.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: #FC9D9D;" stylesheets="@homepage.css" text="Food Chart" textFill="#42070b" GridPane.rowIndex="2">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-24" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Diet.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#funList" prefHeight="170.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: #FC9D9D;" stylesheets="@homepage.css" text="Fun List" textFill="#42070b" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-24" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/toy.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

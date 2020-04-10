@@ -1,108 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXDatePicker?>
 <?import com.jfoenix.controls.JFXTextField?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: FCE4EC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.SigninController">
-  <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="431.0" minWidth="10.0" prefWidth="392.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="549.0" minWidth="10.0" prefWidth="393.0" />
-  </columnConstraints>
-  <rowConstraints>
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-  </rowConstraints>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: FCE4EC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.SigninController">
    <children>
-      <VBox alignment="CENTER" prefHeight="546.0" prefWidth="477.0" GridPane.columnIndex="1">
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: FCE4EC;" StackPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" prefHeight="58.0" prefWidth="196.0" styleClass="fn-24" stylesheets="@homepage.css" text="Sign up" textFill="#42070b" underline="true">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-            </Label>
-            <VBox alignment="TOP_CENTER" prefHeight="93.0" prefWidth="477.0">
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="554.0" prefWidth="766.0" HBox.hgrow="ALWAYS">
                <children>
-                  <JFXTextField fx:id="email" alignment="CENTER" focusColor="#42070b" prefHeight="40.0" prefWidth="380.0" promptText="Enter your email here" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9">
-                     <VBox.margin>
-                        <Insets left="50.0" right="50.0" />
-                     </VBox.margin>
-                  </JFXTextField>
-                  <Label fx:id="label" prefHeight="40.0" prefWidth="290.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
-                     <VBox.margin>
-                        <Insets top="10.0" />
-                     </VBox.margin>
-                  </Label>
-               </children>
-               <VBox.margin>
-                  <Insets top="30.0" />
-               </VBox.margin>
-            </VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="109.0" prefWidth="393.0">
-               <children>
-                  <JFXDatePicker fx:id="birthday" defaultColor="#42070b" prefHeight="40.0" prefWidth="350.0" promptText="YYYY/MM/DD(Birhthdate of your child)" style="-fx-background-color: 42070B;" styleClass="fn-18" stylesheets="@homepage.css">
-                     <VBox.margin>
-                        <Insets top="10.0" />
-                     </VBox.margin>
-                  </JFXDatePicker>
-                  <Label fx:id="labelDate" prefHeight="40.0" prefWidth="290.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
-                     <VBox.margin>
-                        <Insets top="10.0" />
-                     </VBox.margin>
-                  </Label>
-               </children>
-            </VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="94.0" prefWidth="393.0">
-               <children>
-                  <JFXTextField fx:id="password" alignment="CENTER" focusColor="#42070b" prefHeight="40.0" promptText="Enter a password " styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9">
-                     <VBox.margin>
-                        <Insets left="50.0" right="50.0" />
-                     </VBox.margin>
-                  </JFXTextField>
-                  <Label fx:id="labelPass" prefHeight="62.0" prefWidth="390.0" styleClass="fn-16" stylesheets="@homepage.css" textFill="RED">
-                     <VBox.margin>
-                        <Insets top="10.0" />
-                     </VBox.margin>
-                  </Label>
-               </children>
-            </VBox>
-            <VBox alignment="CENTER" prefHeight="108.0" prefWidth="477.0" stylesheets="@homepage.css">
-               <children>
-                  <JFXButton buttonType="RAISED" onAction="#signup" prefHeight="40.0" prefWidth="80.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-16" stylesheets="@homepage.css" text="sign up" textFill="#42070b" />
-               </children>
-            </VBox>
-            <JFXButton buttonType="RAISED" onAction="#goBack" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: FDBDBD;" styleClass="fn-16" stylesheets="@homepage.css" text="Go back" textFill="#42070b">
-               <VBox.margin>
-                  <Insets bottom="10.0" left="290.0" />
-               </VBox.margin>
-            </JFXButton>
-         </children>
-         <opaqueInsets>
-            <Insets top="20.0" />
-         </opaqueInsets>
-      </VBox>
-      <VBox alignment="TOP_CENTER" prefHeight="560.0" prefWidth="295.0">
-         <children>
-            <VBox alignment="CENTER" prefHeight="195.0" prefWidth="392.0">
-               <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="190.0" fitWidth="190.0" layoutX="288.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../image/019-child-2.png" />
                      </image>
                   </ImageView>
+                  <JFXTextField fx:id="email" alignment="CENTER" focusColor="#42070b" labelFloat="true" layoutX="266.0" layoutY="318.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Your email" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9" />
+                  <Label fx:id="label" alignment="CENTER" layoutX="183.0" layoutY="369.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="460.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED" />
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="296.0" layoutY="437.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#signin" prefHeight="40.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Click to get started" textFill="#42070b" />
+                  <JFXButton buttonType="RAISED" layoutX="662.0" layoutY="490.0" onAction="#goBack" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: FDBDBD;" styleClass="fn-16" stylesheets="@homepage.css" text="Go back" textFill="#42070b" />
                </children>
-            </VBox>
+            </AnchorPane>
          </children>
-         <GridPane.margin>
-            <Insets top="100.0" />
-         </GridPane.margin>
-      </VBox>
+      </HBox>
    </children>
-</GridPane>
+</StackPane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: FCE4EC;" stylesheets="@homepage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.ProfileController">
+   <children>
+      <GridPane prefHeight="86.0" prefWidth="785.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="388.0" minWidth="10.0" prefWidth="361.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="424.0" minWidth="10.0" prefWidth="424.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="47.0" prefWidth="103.0" styleClass="fn-35" stylesheets="@homepage.css" text="Profile" textFill="#42070b" underline="true" GridPane.columnIndex="1" />
+            <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <GridPane.margin>
+                  <Insets left="270.0" right="10.0" />
+               </GridPane.margin>
+               <image>
+                  <Image url="@../image/041-student-3.png" />
+               </image>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </GridPane>
+      <GridPane alignment="CENTER" focusTraversable="true" prefHeight="250.0" prefWidth="658.0" stylesheets="@homepage.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="346.0" minWidth="10.0" prefWidth="202.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="383.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets left="100.0" right="100.0" top="50.0" />
+         </VBox.margin>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" styleClass="fn-18" stylesheets="@homepage.css" text="Username" textFill="#42070b">
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" styleClass="fn-18" stylesheets="@homepage.css" text=" Birthdate of your child" textFill="#42070b" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" styleClass="fn-18" stylesheets="@homepage.css" text="Type password" textFill="#42070b" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXPasswordField fx:id="password" focusColor="#42070b" prefHeight="40.0" prefWidth="350.0" unFocusColor="#ffb6b9" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="30.0" right="60.0" />
+               </GridPane.margin>
+            </JFXPasswordField>
+            <JFXTextField fx:id="name" alignment="CENTER" focusColor="#42070b" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXDatePicker fx:id="birthday" defaultColor="#42070b" prefHeight="40.0" prefWidth="270.0" promptText="MM-DD-YYYY" styleClass="fn-18" stylesheets="@homepage.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </JFXDatePicker>
+            <Label alignment="CENTER" contentDisplay="CENTER" styleClass="fn-18" stylesheets="@homepage.css" text="Re-Type password" textFill="#42070b" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXPasswordField fx:id="re_password" focusColor="#42070b" prefHeight="40.0" prefWidth="350.0" unFocusColor="#ffb6b9" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="30.0" right="60.0" />
+               </GridPane.margin>
+            </JFXPasswordField>
+         </children>
+      </GridPane>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="579.0" minWidth="0.0" prefWidth="378.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="785.0" minWidth="10.0" prefWidth="297.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets left="100.0" right="10.0" top="20.0" />
+         </VBox.margin>
+      </GridPane>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#save" prefHeight="40.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Save" textFill="#42070b" />
+      <Label fx:id="profile_label" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="550.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>
