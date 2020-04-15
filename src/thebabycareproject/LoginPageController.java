@@ -1,19 +1,11 @@
 package thebabycareproject;
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.fxml.*;
+import javafx.scene.*;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Paint;
@@ -38,7 +30,7 @@ public class LoginPageController implements Initializable {
     public static String email_txt;
     public void signin(ActionEvent event) throws IOException {
         Validation valid = new Validation();
-        if(!checkDB_with_pass(email,password) && !password.getText().isEmpty() && !email.getText().isEmpty())noAccount.setText("You don't have any account");
+        if(!checkDB_with_pass(email,password) && !password.getText().isEmpty() && !email.getText().isEmpty())noAccount.setText("Please enter the fields correctly");
         //if(!checkDB_with_pass(email))label.setText("Please enter the fields correctly");
         if(email.getText().isEmpty())label.setText("Please enter your email");
         if(valid.validateEmail(email))label.setText("");

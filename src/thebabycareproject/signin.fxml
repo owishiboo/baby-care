@@ -21,7 +21,7 @@
                      </image>
                   </ImageView>
                   <JFXTextField fx:id="email" alignment="CENTER" focusColor="#42070b" labelFloat="true" layoutX="266.0" layoutY="318.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Your email" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9" />
-                  <Label fx:id="label" alignment="CENTER" layoutX="183.0" layoutY="369.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="460.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED" />
+                  <Label fx:id="label" alignment="CENTER" layoutX="183.0" layoutY="369.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="500.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED" />
                   <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="296.0" layoutY="437.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#signin" prefHeight="40.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Click to get started" textFill="#42070b" />
                   <JFXButton buttonType="RAISED" layoutX="662.0" layoutY="490.0" onAction="#goBack" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: FDBDBD;" styleClass="fn-16" stylesheets="@homepage.css" text="Go back" textFill="#42070b" />
                </children>

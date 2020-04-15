@@ -9,7 +9,6 @@ import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-//eta sign up er jonne , login na hole hobe
 public class SigninController implements Initializable {
     public static int flag=0;public static String varification_code="";
     @FXML
@@ -40,8 +39,9 @@ public class SigninController implements Initializable {
             System.out.println(varification_code);
             if(checkDB_without_pass(email))label.setText("The email is used before. Please enter an unused email.");
             else {
-                label.setText("Please wait, a verification code is being sent in your account.");                EmailUtil.sendMail(LoginPageController.email_txt);
-                Parent pane = FXMLLoader.load(getClass().getResource("Verification.fxml"));
+                //label.setText("Please wait, a verification code is being sent in your account.");                
+                EmailUtil.sendMail(email.getText());
+                Parent pane = FXMLLoader.load(getClass().getResource("verification.fxml"));
                 Scene home_page = new Scene(pane);
                 Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 stage.setScene(home_page);

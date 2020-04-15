@@ -3,19 +3,12 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.input.MouseEvent;
+import javafx.fxml.*;
+import javafx.scene.*;
 import javafx.stage.Stage;
 public class HomePageController implements Initializable {
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        
+    public void initialize(URL url, ResourceBundle rb) {        
     } 
     @FXML
     public void foodChart(ActionEvent event) throws IOException{
@@ -34,7 +27,7 @@ public class HomePageController implements Initializable {
     }
     
     public void vaccineReminder(ActionEvent event) throws IOException{
-        Parent panevaccine = FXMLLoader.load(getClass().getResource("VaccineReminder.fxml"));
+        Parent panevaccine = FXMLLoader.load(getClass().getResource("vaccineReminder.fxml"));
          Scene scenevaccine = new Scene(panevaccine);
          Stage stagevaccine = (Stage) ((Node) event.getSource()).getScene().getWindow();
          stagevaccine.setScene(scenevaccine);
@@ -57,7 +50,7 @@ public class HomePageController implements Initializable {
     }
     @FXML
     void profile_settings(ActionEvent event) throws IOException{
-        Parent pane = FXMLLoader.load(getClass().getResource("Profile.fxml"));
+        Parent pane = FXMLLoader.load(getClass().getResource("profile.fxml"));
          Scene home_page = new Scene(pane);
          Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
          stage.setScene(home_page);

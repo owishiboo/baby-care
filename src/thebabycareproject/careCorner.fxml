@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="615.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.CareCornerController">
+   <children>
+      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="615.0" style="-fx-background-color: #fce4ec;" stylesheets="@scrollpane.css">
+         <content>
+            <VBox alignment="CENTER" prefHeight="560.0" prefWidth="615.0" style="-fx-background-color: #fce4ec;">
+               <children>
+                  <JFXButton alignment="CENTER" onAction="#button1" opacity="0.5" prefHeight="75.0" prefWidth="615.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="Winter Skin Care for Baby" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/001-pinwheel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" layoutX="20.0" layoutY="253.0" onAction="#button2" opacity="0.5" prefHeight="75.0" prefWidth="615.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="Fruit Puree for Kids" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/001-pinwheel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" layoutX="20.0" layoutY="215.0" onAction="#button3" opacity="0.5" prefHeight="75.0" prefWidth="615.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="10 Baby Care Skills That Parents Should learn" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/001-pinwheel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" layoutX="20.0" layoutY="178.0" opacity="0.5" prefHeight="75.0" prefWidth="615.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/001-pinwheel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" layoutX="20.0" layoutY="110.0" opacity="0.5" prefHeight="75.0" prefWidth="615.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/001-pinwheel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" layoutX="20.0" layoutY="63.0" opacity="0.5" prefHeight="75.0" prefWidth="615.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/001-pinwheel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" opacity="0.5" prefHeight="75.0" prefWidth="615.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/001-pinwheel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>

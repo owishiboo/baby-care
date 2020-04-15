@@ -1,4 +1,5 @@
 package thebabycareproject;
+import com.jfoenix.controls.JFXTimePicker;
 import java.io.IOException;
 import java.net.URL;
 import java.text.DateFormat;
@@ -11,14 +12,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
+import javafx.util.Duration;
+import tray.animations.AnimationType;
+import tray.notification.TrayNotification;
 public class VaccineReminderController implements Initializable {
-    public static String date;
-    public static String year,month,day;
-    public static String mailAddress;
-    public static String email;
+    public static String date,year,month,day,mailAddress,email,time,hour,minute;
     @FXML 
     public DatePicker datePick;
+    @FXML
+    JFXTimePicker timePick;
     @FXML
     public Label label;
     @FXML
@@ -32,7 +37,14 @@ public class VaccineReminderController implements Initializable {
             month=String.valueOf(date.substring(5, 7));
             day=String.valueOf(date.substring(8, 10));
             System.out.println(year+" "+month+" "+day);
-        });       
+        }); 
+        timePick.setOnAction((ActionEvent event) -> {
+            time = timePick.getValue().toString();//time to string
+            System.out.println(time);
+            hour=String.valueOf(time.substring(0, 2));
+            minute=String.valueOf(time.substring(3, 5));
+            System.out.println(hour+" "+minute);
+        }); 
     }
     public boolean validateDate(){
         Date dateToday = Calendar.getInstance().getTime();  
@@ -51,9 +63,17 @@ public class VaccineReminderController implements Initializable {
     @FXML
     public void initialize(ActionEvent event) throws IOException, Exception{
         if(datePick.getValue()==null)labelDate.setText("Please enter a date");
-        //else if(!validateDate())labelDate.setText("Please enter a valid date");
+        else if(!validateDate())labelDate.setText("Please enter a valid date");
         else{
-            Main.main(null );
+            Image icon = new Image("/image/icon.png");
+            TrayNotification trayBefore = new TrayNotification();
+            trayBefore.setTitle("Please wait...");
+            trayBefore.setImage(icon);
+            trayBefore.setRectangleFill(Paint.valueOf("#42070B"));
+            trayBefore.setMessage("It may a few minutes");
+            trayBefore.setAnimationType(AnimationType.FADE);
+            trayBefore.showAndDismiss(Duration.seconds(2));
+            Main.main(null ); 
         }
     }
    

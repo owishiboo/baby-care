@@ -3,29 +3,49 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
-   <left>
-      <VBox prefHeight="560.0" prefWidth="177.0" BorderPane.alignment="CENTER">
-         <children>
-            <JFXButton buttonType="RAISED" prefHeight="62.0" prefWidth="177.0" ripplerFill="#42070b">
-               <VBox.margin>
-                  <Insets top="20.0" />
-               </VBox.margin>
-            </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="10.0" prefHeight="62.0" prefWidth="177.0" ripplerFill="#42070b">
-               <VBox.margin>
-                  <Insets top="20.0" />
-               </VBox.margin>
-            </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="72.0" prefHeight="62.0" prefWidth="177.0" ripplerFill="#42070b">
-               <VBox.margin>
-                  <Insets top="20.0" />
-               </VBox.margin>
-            </JFXButton>
-         </children>
-      </VBox>
-   </left>
-</BorderPane>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.FunListController">
+   <children>
+      <BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: #fce4ec;">
+         <left>
+            <VBox prefHeight="560.0" prefWidth="170.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton onAction="#care_corner" prefHeight="70.0" prefWidth="180.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Care Corner" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="10.0" onAction="#fun_learn" prefHeight="70.0" prefWidth="180.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Fun and learn" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton prefHeight="70.0" prefWidth="180.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Book corner" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="72.0" prefHeight="70.0" prefWidth="180.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Games" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#create_playlist" prefHeight="70.0" prefWidth="180.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Create Playlist" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#goBack" prefHeight="46.0" prefWidth="202.0" style="-fx-background-color: FDBDBD;" styleClass="fn-16" stylesheets="@homepage.css" text="Go back" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>
