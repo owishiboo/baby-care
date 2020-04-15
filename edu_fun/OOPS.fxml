@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="399.0" prefWidth="601.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="edu_fun.OOPSController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/images_sorry.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="207.0" layoutY="31.0" prefHeight="72.0" prefWidth="381.0" text=" You choose the wrorg answer.Please try again.">
+         <font>
+            <Font name="Blackadder ITC" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="reStart" buttonType="RAISED" layoutX="248.0" layoutY="258.0" onAction="#RESTARTING" style="-fx-background-color: #A0A0A0; -fx-background-radius: 10;" text="RESTART">
+         <font>
+            <Font name="Bodoni MT" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="556.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="edu_fun.Congrats_6Controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="570.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/ballons.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="85.0" layoutX="83.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/images_panda.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="145.0" layoutY="134.0" prefHeight="75.0" prefWidth="360.0" text="You have an awesome observation power">
+         <font>
+            <Font name="Blackadder ITC" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="menu_button" buttonType="RAISED" layoutX="230.0" layoutY="261.0" onAction="#GO_back_main_menu" prefHeight="37.0" prefWidth="85.0" style="-fx-background-color: #A0A0A0; -fx-background-radius: 200;" text="Main menu">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

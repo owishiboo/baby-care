@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="469.0" prefWidth="673.0" styleClass="bodybg1" stylesheets="@Backgroud.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu_fun.Level_2Controller">
+   <children>
+      <Label layoutX="25.0" layoutY="23.0" prefHeight="109.0" prefWidth="252.0" text="Find the unique shape" textFill="#032090">
+         <font>
+            <Font name="Blackadder ITC" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="156.0" fitWidth="127.0" layoutX="294.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/images_pokemon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="81.0" layoutX="62.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/download_circle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="93.0" layoutX="122.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/download-TRIANGLE.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Circle_1" buttonType="RAISED" layoutX="61.0" layoutY="148.0" onAction="#Click_cir_1" prefHeight="66.0" prefWidth="81.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="tri" layoutX="134.0" layoutY="260.0" onAction="#Click_Tri" prefHeight="66.0" prefWidth="69.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="66.0" fitWidth="80.0" layoutX="195.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/rsz_images_pentagon.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Penta_1" layoutX="194.0" layoutY="148.0" onAction="#Click_penta_1" prefHeight="66.0" prefWidth="81.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="66.0" fitWidth="81.0" layoutX="-4.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/download_circle.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Circle_3" layoutX="1.0" layoutY="245.0" onAction="#Click_circle_3" prefHeight="66.0" prefWidth="69.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="66.0" fitWidth="80.0" layoutX="265.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/download_hexagon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Hexa_3" layoutX="264.0" layoutY="245.0" onAction="#Click_hexa_3" prefHeight="66.0" prefWidth="69.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="66.0" fitWidth="93.0" layoutX="36.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/rsz_images_pentagon.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Penta_2" layoutX="35.0" layoutY="346.0" onAction="#Click_penta_2" prefHeight="66.0" prefWidth="81.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="74.0" fitWidth="93.0" layoutX="211.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/download_circle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="93.0" layoutX="342.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/rsz_images_pentagon.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Circle_4" layoutX="215.0" layoutY="379.0" onAction="#Click_circle_4" prefHeight="66.0" prefWidth="81.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Penta_3" layoutX="341.0" layoutY="361.0" onAction="#Click_penta_3" prefHeight="66.0" prefWidth="81.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="Circle_2" fitHeight="66.0" fitWidth="81.0" layoutX="329.0" layoutY="148.0" onDragDetected="#Click_circle_2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/download_circle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Penta_4" fitHeight="66.0" fitWidth="93.0" layoutX="440.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/rsz_images_pentagon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="90.0" layoutX="551.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/download_hexagon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="81.0" layoutX="566.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/download_hexagon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Penta" layoutX="439.0" layoutY="246.0" onAction="#Click_penta" prefHeight="66.0" prefWidth="80.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Circle_3" layoutX="336.0" layoutY="146.0" onAction="#Click_circle_3" prefHeight="66.0" prefWidth="66.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Hexa_2" layoutX="545.0" layoutY="144.0" onAction="#Click_hexa_2" prefHeight="66.0" prefWidth="79.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Hexa_1" layoutX="560.0" layoutY="341.0" onAction="#Click_hexa_1" prefHeight="66.0" prefWidth="79.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

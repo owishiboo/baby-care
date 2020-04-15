@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@Backgroud.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="edu_fun.Congrats_2Controller">
+   <children>
+      <JFXButton fx:id="Main_menu" buttonType="RAISED" layoutX="131.0" layoutY="260.0" onAction="#Main__menu" prefHeight="42.0" prefWidth="114.0" style="-fx-background-color: #A0A0A0; -fx-background-radius: 20;" text="MAIN MENU" textFill="#ff0505">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="next_level" layoutX="306.0" layoutY="260.0" onAction="#GO_next_3" prefHeight="42.0" prefWidth="114.0" style="-fx-background-color: #A0A0A0; -fx-background-radius: 20;" text="NEXT LEVEL" textFill="#f20101">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
