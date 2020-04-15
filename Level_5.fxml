@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="572.0" prefWidth="620.0" styleClass="blackstars" stylesheets="@Backgroud.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="edu_fun.Level_5Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="7.0" prefHeight="60.0" prefWidth="265.0" text="Find the planet earth" textFill="WHITE">
+         <font>
+            <Font name="Blackadder ITC" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="119.0" fitWidth="106.0" layoutX="314.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/images_pokemon_rsz.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="490.0" fitWidth="711.0" layoutX="-2.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@planets.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="planet_2" layoutX="47.0" layoutY="299.0" onAction="#Venus" prefHeight="70.0" prefWidth="72.0" style="-fx-background-radius: 2000;">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="planet_1" layoutX="94.0" layoutY="424.0" onAction="#Mercury" prefHeight="41.0" prefWidth="50.0" style="-fx-background-radius: 2000;">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="planet_9" layoutX="186.0" layoutY="502.0" onAction="#Pluto" prefHeight="33.0" prefWidth="34.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="planet_8" layoutX="306.0" layoutY="471.0" onAction="#Neptune" prefHeight="89.0" prefWidth="82.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="planet_7" layoutX="465.0" layoutY="395.0" onAction="#Uranus" prefHeight="89.0" prefWidth="91.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="planet_6" layoutX="447.0" layoutY="204.0" onAction="#Saturn" prefHeight="112.0" prefWidth="129.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="planet_5" layoutX="324.0" layoutY="94.0" onAction="#Jupiter" prefHeight="138.0" prefWidth="138.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="planet_4" layoutX="181.0" layoutY="116.0" onAction="#Mars" prefHeight="70.0" prefWidth="72.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="planet_3" layoutX="71.0" layoutY="172.0" onAction="#Earth" prefHeight="82.0" prefWidth="82.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
