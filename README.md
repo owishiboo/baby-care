@@ -36,9 +36,7 @@ Registration no. : 2018331059
 Email: mimsabiha59@gmail.com
 Github profile link: https://github.com/mimsabiha
 
-
 ----------
-
 
 **About the Project:**
 
@@ -56,13 +54,12 @@ A desktop app(JavaFX UI) as a helping hand for parents. Short guidance of 0-6 ye
 **Description of Project:** 
 
 Main features: 
-The project contains four categories. Each of them has sections and some of them have subsections.
+The project contains four categories. Each of them has sections and some of them have subsections. The catagories:
 1. Food & Nutrition (Child's diet plan, care according to nutritious status)
 2. Reminder & Notifications (Send a reminder and prioritize tasks)
 3. Growth & Immunity ( Child's physical and mental growth)
 4. Edu-corner (For pre-schooler to learn and read  in fun, has some quizzes) 
-
-Read to know more: https://github.com/owishiboo/baby-care/blob/master/readme.txt
+5. Read to know more: https://github.com/owishiboo/baby-care/blob/master/readme.txt  
 ----------
 **Requirements for User:**
 
