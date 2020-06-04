@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: FCE4EC;" stylesheets="@homepage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.ForgotPassController">
+   <children>
+      <GridPane prefHeight="86.0" prefWidth="785.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="388.0" minWidth="10.0" prefWidth="361.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="424.0" minWidth="10.0" prefWidth="425.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="welcome_label" prefHeight="47.0" prefWidth="425.0" styleClass="fn-35" stylesheets="@homepage.css" textFill="#42070b" GridPane.columnIndex="1" />
+            <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <GridPane.margin>
+                  <Insets left="270.0" right="10.0" />
+               </GridPane.margin>
+               <image>
+                  <Image url="@../image/041-student-3.png" />
+               </image>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </GridPane>
+      <GridPane alignment="CENTER" focusTraversable="true" prefHeight="250.0" prefWidth="650.0" stylesheets="@homepage.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="290.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="360.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets left="100.0" right="100.0" top="50.0" />
+         </VBox.margin>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" styleClass="fn-18" stylesheets="@homepage.css" text="Type new password" textFill="#42070b">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXPasswordField fx:id="password" focusColor="#42070b" prefHeight="40.0" prefWidth="350.0" unFocusColor="#ffb6b9" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXPasswordField>
+            <Label alignment="CENTER" contentDisplay="CENTER" styleClass="fn-18" stylesheets="@homepage.css" text="Re-Type new password" textFill="#42070b" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXPasswordField fx:id="re_password" focusColor="#42070b" prefHeight="40.0" prefWidth="350.0" unFocusColor="#ffb6b9" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXPasswordField>
+         </children>
+      </GridPane>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="579.0" minWidth="0.0" prefWidth="378.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="785.0" minWidth="10.0" prefWidth="297.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets left="100.0" right="10.0" top="20.0" />
+         </VBox.margin>
+      </GridPane>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#save" prefHeight="40.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Save" textFill="#42070b" />
+      <Label fx:id="profile_label" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="785.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>

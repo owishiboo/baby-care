@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stackPane" prefHeight="560.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.SorryController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="560.0" prefWidth="785.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="560.0" prefWidth="785.0">
+               <children>
+                  <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/sorry.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="785.0" styleClass="fn-64" stylesheets="@homepage.css" text="Your answer was wrong" textFill="#424874" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="785.0">
+                     <children>
+                        <JFXButton onAction="#games" prefHeight="60.0" prefWidth="300.0" ripplerFill="BLACK" style="-fx-background-color: #424874;" styleClass="fn-24" stylesheets="@homepage.css" text="Go back to main menu">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton onAction="#go" prefHeight="60.0" prefWidth="300.0" ripplerFill="BLACK" style="-fx-background-color: #424874;" styleClass="fn-24" stylesheets="@homepage.css" text="Retry">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

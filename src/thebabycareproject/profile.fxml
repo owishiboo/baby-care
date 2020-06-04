@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: FCE4EC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.ProfileController">
+   <children>
+      <VBox fx:id="vbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: FCE4EC;" stylesheets="@homepage.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/041-student-3.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="47.0" prefWidth="103.0" styleClass="fn-35" stylesheets="@homepage.css" text="Profile" textFill="#42070b" underline="true">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" styleClass="fn-24" stylesheets="@homepage.css" text="User's info:" textFill="#42070b" underline="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="150.0" styleClass="fn-18" stylesheets="@homepage.css" text="Username:" textFill="#42070b" />
+                  <JFXTextField fx:id="name" alignment="CENTER" focusColor="#42070b" labelFloat="true" prefWidth="200.0" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" styleClass="fn-24" stylesheets="@homepage.css" text="Child's info:" textFill="#42070b" underline="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="150.0" styleClass="fn-18" stylesheets="@homepage.css" text="Gender:" textFill="#42070b" />
+                  <ChoiceBox fx:id="genderChoiceBox" prefWidth="200.0" stylesheets="@choicebox.css">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="150.0" styleClass="fn-18" stylesheets="@homepage.css" text="Birthdate:" textFill="#42070b" />
+                  <JFXDatePicker fx:id="birthday" defaultColor="#42070b" prefWidth="200.0" promptText="MM-DD-YYYY" styleClass="fn-18" stylesheets="@homepage.css">
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXDatePicker>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="150.0" styleClass="fn-18" stylesheets="@homepage.css" text="Weight Status:" textFill="#42070b">
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="statusChoiceBox" prefWidth="200.0" stylesheets="@choicebox.css">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" onMouseClicked="#questionMark" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/question%20(1).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="150.0" styleClass="fn-18" stylesheets="@homepage.css" text="Type password" textFill="#42070b" />
+                  <JFXPasswordField fx:id="password" focusColor="#42070b" prefWidth="200.0" unFocusColor="#ffb6b9">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXPasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="150.0" styleClass="fn-18" stylesheets="@homepage.css" text="Re-Type password" textFill="#42070b" />
+                  <JFXPasswordField fx:id="re_password" focusColor="#42070b" prefWidth="200.0" unFocusColor="#ffb6b9">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXPasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="profile_label" alignment="CENTER" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#save" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" styleClass="fn-18" stylesheets="@homepage.css" text="Save" textFill="#42070b">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

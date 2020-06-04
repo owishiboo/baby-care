@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: FFD3B6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.GamesController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="560.0" prefWidth="785.0" StackPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: FFD3B6;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="393.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="393.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="280.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="280.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <JFXButton buttonType="RAISED" onAction="#goBack" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: F9B169;" styleClass="fn-16" stylesheets="@homepage.css" text="Go back">
+                     <GridPane.margin>
+                        <Insets bottom="230.0" left="10.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#count" prefHeight="170.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: F57B51;" stylesheets="@homepage.css" text="Numbers">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-24" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0">
+                           <image>
+                              <Image url="@../image/004-numbers.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="150.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#indicate" prefHeight="170.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: F57B51;" stylesheets="@homepage.css" text="Indicate" GridPane.rowIndex="1">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-24" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0">
+                           <image>
+                              <Image url="@../image/025-lion.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="150.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#color" prefHeight="170.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: F57B51;" stylesheets="@homepage.css" text="Color" GridPane.columnIndex="1">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-24" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0">
+                           <image>
+                              <Image url="@../image/014-indonesia.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#shape" prefHeight="170.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: F57B51;" stylesheets="@homepage.css" text="Shape" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-24" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0">
+                           <image>
+                              <Image url="@../image/006-pentagon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" prefHeight="560.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.QuizWriteAnswerController">
+   <children>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" stylesheets="@scrollpaneQuiz.css">
+         <content>
+            <VBox fx:id="vbox" alignment="TOP_CENTER" prefWidth="785.0">
+               <children>
+                  <VBox fx:id="vbox1" prefWidth="785.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/go-back.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="label" styleClass="fn-24" stylesheets="@homepage.css" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefWidth="615.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fx:id="i1" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="i2" layoutX="268.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets right="40.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="i3" fitWidth="100.0" layoutX="218.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="i4" layoutX="168.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefWidth="615.0">
+                     <children>
+                        <ImageView fx:id="i5" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="i6" layoutX="268.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets right="40.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="i7" layoutX="218.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="i8" layoutX="168.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXTextField fx:id="text" alignment="CENTER" focusColor="RED" prefWidth="200.0" promptText="Write here" styleClass="fn-24" stylesheets="@homepage.css" unFocusColor="BLACK">
+                     <VBox.margin>
+                        <Insets left="150.0" right="150.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXButton fx:id="next" onAction="#next" styleClass="fn-24" stylesheets="@homepage.css" text="Next" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <VBox alignment="TOP_RIGHT">
+                     <children>
+                        <Label onMouseClicked="#changeTextColor" styleClass="fn-18" stylesheets="@homepage.css" text="Change question's text color" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="10.0" top="30.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>

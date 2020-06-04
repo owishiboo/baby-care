@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stackPane" prefHeight="560.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.FinalCongoController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="560.0" prefWidth="785.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="560.0" prefWidth="785.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="160.0" prefWidth="785.0" styleClass="fn-64" stylesheets="@homepage.css" text="CONGRATULATIONS!" textFill="#c30101" />
+                  <ImageView fitHeight="160.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/001-fire-cracker.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="120.0" prefWidth="785.0" styleClass="fn-35" stylesheets="@homepage.css" text="All levels are cleared! You've a very good observation!" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton onAction="#games" opacity="0.75" prefHeight="60.0" prefWidth="300.0" ripplerFill="BLACK" style="-fx-background-color: #c30101;" stylesheets="@homepage.css" text="Go back to main menu">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="fn-24" />
+                              <String fx:value="hover-hand" />
+                           </styleClass>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

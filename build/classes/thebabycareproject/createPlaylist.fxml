@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stackPane" prefHeight="560.0" prefWidth="615.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.CreatePlaylistController">
+   <children>
+      <ScrollPane fx:id="scrollPane" prefHeight="560.0" prefWidth="615.0" style="-fx-background-color: #fce4ec;" stylesheets="@scrollpane.css">
+         <content>
+            <VBox fx:id="vbox" alignment="CENTER_RIGHT" prefHeight="560.0" prefWidth="615.0" style="-fx-background-color: #fce4ec;">
+               <children>
+                  <JFXButton onAction="#clickHere" styleClass="fn-14" stylesheets="@homepage.css" text="Click here to know more" textFill="#42070b" underline="true">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="615.0">
+                     <children>
+                        <JFXButton fx:id="but1_plus" alignment="CENTER" contentDisplay="CENTER" onAction="#but1_plus" opacity="0.5" prefHeight="75.0" prefWidth="830.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="+" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#but1_del" prefHeight="75.0" prefWidth="45.0" ripplerFill="#42070b" styleClass="fn-24" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-delete-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="615.0">
+                     <children>
+                        <JFXButton fx:id="but2_plus" alignment="CENTER" contentDisplay="CENTER" onAction="#but2_plus" opacity="0.5" prefHeight="75.0" prefWidth="830.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="+" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#but2_del" prefHeight="75.0" prefWidth="45.0" ripplerFill="#42070b" styleClass="fn-24" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-delete-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="615.0">
+                     <children>
+                        <JFXButton fx:id="but3_plus" alignment="CENTER" contentDisplay="CENTER" onAction="#but3_plus" opacity="0.5" prefHeight="75.0" prefWidth="830.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="+" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#but3_del" prefHeight="75.0" prefWidth="45.0" ripplerFill="#42070b" styleClass="fn-24" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-delete-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="615.0">
+                     <children>
+                        <JFXButton fx:id="but4_plus" alignment="CENTER" contentDisplay="CENTER" onAction="#but4_plus" opacity="0.5" prefHeight="75.0" prefWidth="830.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="+" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#but4_del" prefHeight="75.0" prefWidth="45.0" ripplerFill="#42070b" styleClass="fn-24" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-delete-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="615.0">
+                     <children>
+                        <JFXButton fx:id="but5_plus" alignment="CENTER" contentDisplay="CENTER" onAction="#but5_plus" opacity="0.5" prefHeight="75.0" prefWidth="830.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="+" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#but5_del" prefHeight="75.0" prefWidth="45.0" ripplerFill="#42070b" styleClass="fn-24" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-delete-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="615.0">
+                     <children>
+                        <JFXButton fx:id="but6_plus" alignment="CENTER" contentDisplay="CENTER" onAction="#but6_plus" opacity="0.5" prefHeight="75.0" prefWidth="830.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="+" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#but6_del" prefHeight="75.0" prefWidth="45.0" ripplerFill="#42070b" styleClass="fn-24" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-delete-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="615.0">
+                     <children>
+                        <JFXButton fx:id="but7_plus" alignment="CENTER" contentDisplay="CENTER" onAction="#but7_plus" opacity="0.5" prefHeight="75.0" prefWidth="830.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="+" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#but7_del" prefHeight="75.0" prefWidth="45.0" ripplerFill="#42070b" styleClass="fn-24" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-delete-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="615.0">
+                     <children>
+                        <JFXButton fx:id="but8_plus" alignment="CENTER" contentDisplay="CENTER" onAction="#but8_plus" opacity="0.5" prefHeight="75.0" prefWidth="830.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="+" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#but8_del" prefHeight="75.0" prefWidth="45.0" ripplerFill="#42070b" styleClass="fn-24" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-delete-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="615.0">
+                     <children>
+                        <JFXButton fx:id="but9_plus" alignment="CENTER" contentDisplay="CENTER" onAction="#but9_plus" opacity="0.5" prefHeight="75.0" prefWidth="830.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="+" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#but9_del" prefHeight="75.0" prefWidth="45.0" ripplerFill="#42070b" styleClass="fn-24" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-delete-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="615.0">
+                     <children>
+                        <JFXButton fx:id="but10_plus" alignment="CENTER" contentDisplay="CENTER" onAction="#but10_plus" opacity="0.5" prefHeight="75.0" prefWidth="830.0" ripplerFill="#42070b" style="-fx-background-color: FDBDBD;" styleClass="fn-24" text="+" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#but10_del" prefHeight="75.0" prefWidth="45.0" ripplerFill="#42070b" styleClass="fn-24" textFill="#42070b">
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-delete-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>

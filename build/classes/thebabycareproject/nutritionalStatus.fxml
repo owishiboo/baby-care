@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="615.0" style="-fx-background-color: FCE4EC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.NutritionalStatusController">
+   <children>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCE4EC;" stylesheets="@scrollpane.css">
+         <content>
+            <HBox fx:id="hbox" alignment="CENTER" style="-fx-background-color: FCE4EC;">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefWidth="595.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="70.0" prefWidth="400.0">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/006-baby.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" prefWidth="195.0">
+                                 <children>
+                                    <JFXButton onAction="#clickHere" prefWidth="200.0" styleClass="fn-14" stylesheets="@homepage.css" text="Click here to know more" textFill="#42070b" underline="true" />
+                                    <JFXButton onAction="#changeWeightStatus" prefWidth="200.0" styleClass="fn-14" stylesheets="@homepage.css" text="Change nutritious status" textFill="#42070b" underline="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefWidth="580.0">
+                           <children>
+                              <Label styleClass="fn-24" stylesheets="@homepage.css" text="Age :" textFill="#42070b" />
+                              <Label styleClass="fn-18" stylesheets="@homepage.css" text="Year:" textFill="#42070b">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ChoiceBox fx:id="ageChoiceBox1" stylesheets="@choicebox.css">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ChoiceBox>
+                              <Label styleClass="fn-18" stylesheets="@homepage.css" text="Month:" textFill="#42070b">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ChoiceBox fx:id="ageChoiceBox2" stylesheets="@choicebox.css">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ChoiceBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="35.0" top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefWidth="580.0">
+                           <children>
+                              <Label styleClass="fn-24" stylesheets="@homepage.css" text="Height :" textFill="#42070b" />
+                              <JFXTextField fx:id="height" focusColor="#42070b" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <ChoiceBox fx:id="heightChoiceBox" stylesheets="@choicebox.css">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ChoiceBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="35.0" top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefWidth="580.0">
+                           <children>
+                              <Label styleClass="fn-24" stylesheets="@homepage.css" text="Weight :" textFill="#42070b" />
+                              <JFXTextField fx:id="weight" focusColor="#42070b" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin></JFXTextField>
+                              <ChoiceBox fx:id="weightChoiceBox" stylesheets="@choicebox.css" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="35.0" top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefWidth="580.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="35.0" top="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label styleClass="fn-24" stylesheets="@homepage.css" text="Gender :" textFill="#42070b" />
+                              <ChoiceBox fx:id="genderChoiceBox" prefWidth="100.0" stylesheets="@choicebox.css">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin></ChoiceBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefWidth="580.0">
+                           <children>
+                              <Label styleClass="fn-24" stylesheets="@homepage.css" text="Physical Activity Level(PAL):" textFill="#42070b" />
+                              <ChoiceBox fx:id="activityChoiceBox" prefWidth="150.0" stylesheets="@choicebox.css">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ChoiceBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="35.0" top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="20.0" top="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <JFXButton buttonType="RAISED" onAction="#calculate" style="-fx-background-color: FC9D9D;" styleClass="fn-16" stylesheets="@homepage.css" text="Calculate" textFill="#42070b" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefWidth="595.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="20.0" top="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fx:id="imageView" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label fx:id="bmilevel" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label fx:id="calorie" styleClass="fn-18" stylesheets="@homepage.css" textFill="#42070b">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="20.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="protien" styleClass="fn-18" stylesheets="@homepage.css" textFill="#42070b">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="20.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>

@@ -1,0 +1,5 @@
+getBMI = Food & Nutrition
+funList = Edu Corner
+food chart = Growth & Immunity
+care corner = care playlist
+care article = care blogs

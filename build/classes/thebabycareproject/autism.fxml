@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="560.0" prefWidth="615.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.AutismController">
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+   <children>
+      <VBox prefHeight="560.0" prefWidth="615.0">
+         <children>
+            <Label alignment="CENTER" styleClass="fn-24" stylesheets="@homepage.css" text="Please remember autism is not a disease. Autism, or&#10;autism spectrum disorder (ASD), refers to a broad&#10;range of conditions characterized by challenges with&#10;social skills, repetitive behaviors, speech and nonverbal&#10;communication. If your child is diagnosed with autism &#10;he will need more care and attentions.&#10;Know more:&#10;" textFill="#42070b" />
+            <Hyperlink fx:id="h1" styleClass="fn-18" stylesheets="@homepage.css" text="What is autism?" />
+            <Hyperlink fx:id="h2" styleClass="fn-18" stylesheets="@homepage.css" text="Signs, causes, types of Autism" />
+            <Label alignment="CENTER" styleClass="fn-24" stylesheets="@homepage.css" text="You may also visit these for further help:&#10;" textFill="#42070b" />
+            <Hyperlink fx:id="h3" styleClass="fn-18" stylesheets="@homepage.css" text="www.autismspeaks.org" />
+            <Hyperlink fx:id="h4" styleClass="fn-18" stylesheets="@homepage.css" text="www.autism-society.org" />
+         </children>
+         <StackPane.margin>
+            <Insets left="10.0" />
+         </StackPane.margin>
+      </VBox>
+   </children>
+</StackPane>

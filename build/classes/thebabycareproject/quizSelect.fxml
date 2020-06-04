@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleNode?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" prefHeight="560.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.QuizSelectController">
+   <children>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" stylesheets="@scrollpaneQuiz.css">
+         <content>
+            <VBox fx:id="vbox" alignment="TOP_CENTER" prefWidth="785.0">
+               <children>
+                  <VBox fx:id="vbox1" prefWidth="785.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/go-back.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="label" styleClass="fn-24" stylesheets="@homepage.css" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXToggleNode fx:id="t1">
+                           <HBox.margin>
+                              <Insets left="70.0" right="70.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fx:id="i1" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tg" />
+                           </toggleGroup>
+                        </JFXToggleNode>
+                        <JFXToggleNode fx:id="t2" layoutX="310.0" layoutY="10.0" toggleGroup="$tg">
+                           <HBox.margin>
+                              <Insets left="70.0" right="70.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fx:id="i2" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </JFXToggleNode>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="65.0">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXToggleNode fx:id="t3" toggleGroup="$tg">
+                           <HBox.margin>
+                              <Insets left="70.0" right="70.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fx:id="i3" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </JFXToggleNode>
+                        <JFXToggleNode fx:id="t4" toggleGroup="$tg">
+                           <HBox.margin>
+                              <Insets left="70.0" right="70.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fx:id="i4" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </JFXToggleNode>
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="next" onAction="#next" text="Next" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <VBox alignment="TOP_RIGHT">
+                     <children>
+                        <Label onMouseClicked="#changeTextColor" styleClass="fn-18" stylesheets="@homepage.css" text="Change question's text color" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="10.0" top="30.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>

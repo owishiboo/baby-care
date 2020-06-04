@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.DietChartController">
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+   <children>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fce4ec;" stylesheets="@scrollpane.css" StackPane.alignment="CENTER">
+         <content>
+            <VBox alignment="CENTER" style="-fx-background-color: #fce4ec;" styleClass="fn-40" stylesheets="@../../../TheBabyCareProject/src/thebabycareproject/homepage.css">
+               <children>
+                  <HBox alignment="CENTER" prefWidth="785.0">
+                     <children>
+                        <HBox prefHeight="90.0" prefWidth="262.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/reply.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="262.0">
+                           <children>
+                              <ImageView fx:id="babyIcon" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="262.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Label fx:id="dietPlanLabel" alignment="CENTER" styleClass="fn-40" stylesheets="@homepage.css" textFill="#42070b">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fx:id="weekly" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="bmfmLabel" styleClass="fn-14" stylesheets="@homepage.css" textFill="#42070b">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fx:id="daily" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="statusLabel" alignment="CENTER" styleClass="fn-24" stylesheets="@homepage.css" textFill="#42070b" underline="true">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fx:id="status" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>
