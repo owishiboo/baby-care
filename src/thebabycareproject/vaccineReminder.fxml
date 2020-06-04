@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXDatePicker?>
-<?import com.jfoenix.controls.JFXTimePicker?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -50,18 +49,12 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="55.0" prefWidth="785.0">
                <children>
-                  <Label prefHeight="40.0" prefWidth="250.0" styleClass="fn-24" stylesheets="@homepage.css" text="Date :" textFill="#42070b">
+                  <Label prefHeight="45.0" prefWidth="95.0" styleClass="fn-24" stylesheets="@homepage.css" text="Date :" textFill="#42070b">
                      <HBox.margin>
                         <Insets left="50.0" />
                      </HBox.margin>
                   </Label>
-                  <JFXDatePicker fx:id="datePick" defaultColor="#42070b" editable="false" opacity="0.5" overLay="true" prefHeight="40.0" prefWidth="326.0" promptText="YYYY/MM/DD" styleClass="fn-18" stylesheets="@homepage.css" />
-                  <JFXTimePicker fx:id="timePick" defaultColor="#42070b" opacity="0.5" prefHeight="40.0" prefWidth="302.0" promptText="hh:mm" styleClass="fn-18" stylesheets="@homepage.css">
-                     <HBox.margin>
-                        <Insets left="20.0" />
-                     </HBox.margin>
-                  </JFXTimePicker>
-
+                  <JFXDatePicker fx:id="datePick" defaultColor="#42070b" opacity="0.5" overLay="true" prefHeight="35.0" prefWidth="260.0" promptText="DD/MM/YY" styleClass="fn-18" stylesheets="@homepage.css" />
                   <Label fx:id="labelDate" prefHeight="42.0" prefWidth="359.0" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
                      <HBox.margin>
                         <Insets left="20.0" />
