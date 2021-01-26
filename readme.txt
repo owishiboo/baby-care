@@ -12,14 +12,14 @@ created in PowerPoint.
 
 1. Food & Nutrition:
  
-This section depends mostly on the database.
+This catagory depends mostly on the database.
 i. Nutritional Status: A calculator to know weight status, daily needs of calories, and protein. Calculated data is used to make a diet
 plan.
 ii. Nutriment: Diet plan with cautions according to the child's weight status. 
 ->Subsection: Diet chat. Loads images and icons according to the given data by the user.
 iii. Recipes: A list of shared youtube contents about the child's meal mentioned in the diet plan. Unchangeable.
 
-2. Reminder & Notifications: A user-dependent section.
+2. Reminder & Notifications: A user-dependent catagory.
 
 i. Vaccine Reminder: User can save a reminder here, an email will be sent on a given date and time as the user wanted. Quartz scheduler
 was used to create a thread in the background to send the email in the required time.
