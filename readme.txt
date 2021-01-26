@@ -12,21 +12,21 @@ created in PowerPoint.
 
 1. Food & Nutrition:
  
-This catagory depends mostly on the database.
+This catagory depends mostly on the database. It has 4 sections-
 i. Nutritional Status: A calculator to know weight status, daily needs of calories, and protein. Calculated data is used to make a diet
 plan.
 ii. Nutriment: Diet plan with cautions according to the child's weight status. 
-->Subsection: Diet chat. Loads images and icons according to the given data by the user.
+->Subsection: Diet chart. Loads images and icons according to the given data by the user.
 iii. Recipes: A list of shared youtube contents about the child's meal mentioned in the diet plan. Unchangeable.
 
-2. Reminder & Notifications: A user-dependent catagory.
+2. Reminder & Notifications: A user-dependent catagory. It has 2 sections-
 
 i. Vaccine Reminder: User can save a reminder here, an email will be sent on a given date and time as the user wanted. Quartz scheduler
 was used to create a thread in the background to send the email in the required time.
 ii. Pop-ups: Users can save a reminder with a message body. Works as same as 'Vaccine Reminder'.
 Both of them are a bit time-consuming.
 
-3. Growth & Immunity: Default. Can't be changed, also it doesn't depend on the database.
+3. Growth & Immunity: Default. Can't be changed, also it doesn't depend on the database. It has 5 sections-
 
 i. Care Playlist: A list of shared youtube contents about child care. Unchangeable.
 ii. Care Blogs: A list of shared websites about child care. Unchangeable.
@@ -34,7 +34,7 @@ iii. Growth Charts: A list of pdfs about child growth and surveys that are store
 iv. Growth Calculator: Calculates certain data to learn about a child's growth and development.
 v. Autism: Websites and blogs about childhood autism shared as hyperlinks.
 
-4. Edu-corner: This is the only category that children can use directly. 
+4. Edu-corner: This is the only category that children can use directly. It has 4 sections-
 
 i. Fun and Learn: A list of shared youtube contents that are made for kids. Unchangeable.
 ii. Book corner: A list of pdfs of short and easy stories made for kids that are stored in a google drive account. Unchangeable.
