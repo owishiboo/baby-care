@@ -33,7 +33,7 @@
                   <Insets top="30.0" />
                </VBox.margin>
                <children>
-                  <JFXToggleNode fx:id="t1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: C8E6C9;">
+                  <JFXToggleNode fx:id="t1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" selected="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
