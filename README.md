@@ -41,7 +41,7 @@ Github profile link: https://github.com/mimsabiha
 
 **About the Project:**
 
-A desktop app(JavaFX UI) as a helping hand for parents. Short guidance of 0-6 years of kid's health, growth, diet plan, and learning. Also a helping hand for a pre-schooler as a new learner. Usable for parents and kids.
+A desktop app(JavaFX UI) as a helping hand for parents. Short guidance of 0-6 years of kid's health, growth, diet plan, and learning. Also a helping hand for a pre-schooler as a new learner. Usable for both parents and kids.
 
 **Built with:** 
 
