@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TheBabyCareProject.jnlp">
+  <information>
+    <title>TheBabyCareProject</title>
+    <vendor>hp</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TheBabyCareProject.jar" size="582531" download="eager" />
+    <jar href="lib\TrayNotification.jar" size="41019" download="eager" />
+    <jar href="lib\activation-1.1.jar" size="62983" download="eager" />
+    <jar href="lib\c3p0-0.9.5.2.jar" size="497865" download="eager" />
+    <jar href="lib\controlsfx-8.0.1.jar" size="296347" download="eager" />
+    <jar href="lib\controlsfx-8.40.13.jar" size="1213306" download="eager" />
+    <jar href="lib\javax.mail.jar" size="659033" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\log4j-1.2.16.jar" size="481535" download="eager" />
+    <jar href="lib\quartz-2.3.0-SNAPSHOT.jar" size="693579" download="eager" />
+    <jar href="lib\quartz-jobs-2.3.0-SNAPSHOT.jar" size="34023" download="eager" />
+    <jar href="lib\sample.jar" size="4401" download="eager" />
+    <jar href="lib\slf4j-api-1.7.7.jar" size="29257" download="eager" />
+    <jar href="lib\slf4j-log4j12-1.7.7.jar" size="8870" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TheBabyCareProject" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="thebabycareproject.TheBabyCareProject"  name="TheBabyCareProject" />
+  <update check="always"/>
+</jnlp>

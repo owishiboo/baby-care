@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.AutismController">
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="605.0">
+         <children>
+            <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/think.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="fn-18" stylesheets="@homepage.css" text="Please remember autism is not a disease. Autism, or&#10;autism spectrum disorder (ASD), refers to a broad&#10;range of conditions characterized by challenges with&#10;social skills, repetitive behaviors, speech and nonverbal&#10;communication. If your child is diagnosed with autism &#10;he will need more care and attentions.&#10;Know more:&#10;" textFill="#42070b" />
+            <Hyperlink fx:id="h1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@homepage.css" text="What is autism?">
+               <styleClass>
+                  <String fx:value="fn-18" />
+                  <String fx:value="hover-hand" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Hyperlink>
+            <Hyperlink fx:id="h2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@homepage.css" text="Signs, causes, types of Autism">
+               <styleClass>
+                  <String fx:value="fn-18" />
+                  <String fx:value="hover-hand" />
+               </styleClass></Hyperlink>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="fn-18" stylesheets="@homepage.css" text="You may also visit these for further help:&#10;" textFill="#42070b">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Label>
+            <Hyperlink fx:id="h3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@homepage.css" text="www.autismspeaks.org">
+               <styleClass>
+                  <String fx:value="fn-18" />
+                  <String fx:value="hover-hand" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Hyperlink>
+            <Hyperlink fx:id="h4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@homepage.css" text="www.autism-society.org">
+               <styleClass>
+                  <String fx:value="fn-18" />
+                  <String fx:value="hover-hand" />
+               </styleClass></Hyperlink>
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.RecipesController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;">
+         <children>
+            <JFXTabPane prefHeight="560.0" prefWidth="200.0" stylesheets="@tabPane.css" tabMinWidth="100.0">
+               <tabs>
+                  <Tab text="Purees">
+                     <content>
+                        <AnchorPane prefWidth="605.0">
+                           <children>
+                              <VBox alignment="CENTER" prefWidth="605.0">
+                                 <children>
+                                    <JFXButton fx:id="button1" alignment="TOP_LEFT" onAction="#button1" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Banana puree" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/048-puree.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button2" alignment="TOP_LEFT" onAction="#button2" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Carrot puree" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/048-puree.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button3" alignment="TOP_LEFT" onAction="#button3" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Mixed vegetable puree" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/048-puree.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button4" alignment="TOP_LEFT" onAction="#button4" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Pumpkin puree" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/048-puree.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Porridge">
+                     <content>
+                        <AnchorPane prefWidth="605.0" style="-fx-background-color: #fce4ec;">
+                           <children>
+                              <ScrollPane prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;" stylesheets="@scrollpane.css">
+                                 <content>
+                                    <VBox alignment="CENTER" prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;">
+                                       <children>
+                                          <JFXButton fx:id="button5" alignment="TOP_LEFT" onAction="#button5" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Berley porridge" textFill="#42070b">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/cereal.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="20.0" right="30.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton fx:id="button6" alignment="TOP_LEFT" onAction="#button6" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Oats banana porridge" textFill="#42070b">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/cereal.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="20.0" right="30.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton fx:id="button7" alignment="TOP_LEFT" onAction="#button7" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Rice porridge" textFill="#42070b">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/cereal.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="20.0" right="30.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton fx:id="button8" alignment="TOP_LEFT" onAction="#button8" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Sooji porridge" textFill="#42070b">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/cereal.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="20.0" right="30.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton fx:id="button9" alignment="TOP_LEFT" onAction="#button9" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Sooji banana porridge" textFill="#42070b">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/cereal.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="20.0" right="30.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton fx:id="button10" alignment="TOP_LEFT" onAction="#button10" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Wheat porridge" textFill="#42070b">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/cereal.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="20.0" right="30.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets top="19.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Pancakes">
+                     <content>
+                        <AnchorPane prefWidth="605.0">
+                           <children>
+                              <VBox alignment="CENTER" prefWidth="605.0">
+                                 <children>
+                                    <JFXButton fx:id="button19" alignment="TOP_LEFT" onAction="#button19" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Wheat pancakes" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/052-eat-1.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Rice Meals">
+                     <content>
+                        <AnchorPane prefWidth="605.0">
+                           <children>
+                              <VBox alignment="CENTER" prefWidth="605.0">
+                                 <children>
+                                    <JFXButton fx:id="button11" alignment="TOP_LEFT" onAction="#button11" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Rice gruel" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/069-rice.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button12" alignment="TOP_LEFT" onAction="#button12" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Egg rice" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/069-rice.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button14" alignment="TOP_LEFT" onAction="#button14" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Khichuri" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/069-rice.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button15" alignment="TOP_LEFT" onAction="#button15" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Spinach khichuri" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/069-rice.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Fish &amp; Meat">
+                     <content>
+                        <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="605.0">
+                                 <children>
+                                    <JFXButton fx:id="button23" alignment="TOP_LEFT" onAction="#button23" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Fish curry for babies" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/088-meat.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button24" alignment="TOP_LEFT" onAction="#button24" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Meat meals" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/088-meat.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Soup">
+                     <content>
+                        <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER" prefWidth="605.0">
+                                 <children>
+                                    <JFXButton fx:id="button16" alignment="TOP_LEFT" onAction="#button16" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Vegetable soup" textFill="#42070b">
+                                       <stylesheets>
+                                          <URL value="@homepage.css" />
+                                          <URL value="@scrollpane.css" />
+                                       </stylesheets>
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/070-cereal.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button17" alignment="TOP_LEFT" onAction="#button17" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Lentil soup" textFill="#42070b">
+                                       <stylesheets>
+                                          <URL value="@homepage.css" />
+                                          <URL value="@scrollpane.css" />
+                                       </stylesheets>
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/070-cereal.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button18" alignment="TOP_LEFT" onAction="#button18" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Chicken soup" textFill="#42070b">
+                                       <stylesheets>
+                                          <URL value="@homepage.css" />
+                                          <URL value="@scrollpane.css" />
+                                       </stylesheets>
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/070-cereal.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Shakes &amp; Youghurt">
+                     <content>
+                        <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER" prefWidth="605.0">
+                                 <children>
+                                    <JFXButton fx:id="button13" alignment="TOP_LEFT" onAction="#button13" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Yogurt" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/drink.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button20" alignment="TOP_LEFT" onAction="#button20" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Stewed apple" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/drink.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button21" alignment="TOP_LEFT" onAction="#button21" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Fruit smoothies" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/drink.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton fx:id="button22" alignment="TOP_LEFT" onAction="#button22" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Fruit milkshakes" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/drink.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </VBox>
+   </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</StackPane>

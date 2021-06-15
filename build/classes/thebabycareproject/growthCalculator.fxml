@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: FCE4EC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.GrowthCalculatorController">
+   <children>
+      <VBox fx:id="vbox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="605.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="595.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefWidth="195.0">
+                     <children>
+                        <JFXButton alignment="CENTER" onAction="#clickHere" prefWidth="200.0" styleClass="fn-14" stylesheets="@homepage.css" text="Click here to know more" textFill="#42070b" underline="true" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/002-baby.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="580.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="170.0" styleClass="fn-18" stylesheets="@homepage.css" text="Height: " textFill="#42070b" />
+                  <JFXTextField fx:id="height" alignment="CENTER" focusColor="#42070b" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <ChoiceBox fx:id="heightChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" styleClass="fn-16">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <stylesheets>
+                        <URL value="@choicebox.css" />
+                        <URL value="@homepage.css" />
+                     </stylesheets>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="35.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="580.0">
+               <children>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="170.0" styleClass="fn-18" stylesheets="@homepage.css" text="Head Circumference:" textFill="#42070b" />
+                  <JFXTextField fx:id="circum" alignment="CENTER" focusColor="#42070b" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <ChoiceBox fx:id="circumChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" styleClass="fn-16">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <stylesheets>
+                        <URL value="@choicebox.css" />
+                        <URL value="@homepage.css" />
+                     </stylesheets>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="35.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="580.0">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="35.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <Label alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="170.0" styleClass="fn-18" stylesheets="@homepage.css" text="Gender :" textFill="#42070b" />
+                  <ChoiceBox fx:id="genderChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" styleClass="fn-16">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <stylesheets>
+                        <URL value="@choicebox.css" />
+                        <URL value="@homepage.css" />
+                     </stylesheets>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="580.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefWidth="170.0" styleClass="fn-18" stylesheets="@homepage.css" text="Age:" textFill="#42070b" />
+                  <Label styleClass="fn-16" stylesheets="@homepage.css" text="Year:" textFill="#42070b">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="ageChoiceBox1" prefWidth="100.0" styleClass="fn-16">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <stylesheets>
+                        <URL value="@choicebox.css" />
+                        <URL value="@homepage.css" />
+                     </stylesheets>
+                  </ChoiceBox>
+                  <Label styleClass="fn-16" stylesheets="@homepage.css" text="Month:" textFill="#42070b">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="ageChoiceBox2" prefWidth="100.0" styleClass="fn-16">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <stylesheets>
+                        <URL value="@choicebox.css" />
+                        <URL value="@homepage.css" />
+                     </stylesheets>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="35.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <JFXButton alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#calculate" style="-fx-background-color: FC9D9D;" stylesheets="@homepage.css" text="Calculate" textFill="#42070b">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="fn-16" />
+                  <String fx:value="hover-hand" />
+               </styleClass>
+            </JFXButton>
+            <Label fx:id="circumLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="fn-18" stylesheets="@homepage.css" textFill="#42070b">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

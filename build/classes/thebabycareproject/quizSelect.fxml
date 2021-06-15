@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleNode?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.QuizSelectController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="705.0" StackPane.alignment="TOP_CENTER">
+         <children>
+            <VBox fx:id="vbox1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="705.0" style="-fx-background-color: #e6ceff;">
+               <children>
+                  <Label fx:id="labelQues" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #e6ceff;" styleClass="fn-18" stylesheets="@homepage.css" textFill="#000063">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="705.0">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <children>
+                  <JFXToggleNode fx:id="t1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fx:id="i1" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tg" />
+                     </toggleGroup>
+                  </JFXToggleNode>
+                  <JFXToggleNode fx:id="t2" layoutX="310.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" toggleGroup="$tg">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fx:id="i2" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </JFXToggleNode>
+                  <JFXToggleNode fx:id="t3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" toggleGroup="$tg">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fx:id="i3" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </JFXToggleNode>
+                  <JFXToggleNode fx:id="t4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" toggleGroup="$tg">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fx:id="i4" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </JFXToggleNode>
+               </children>
+            </HBox>
+            <JFXButton fx:id="next" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#next" prefWidth="100.0" style="-fx-background-color: #e6ceff;" stylesheets="@homepage.css" text="Next" textFill="#000063">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="fn-18" />
+                  <String fx:value="hover-hand" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.QuizBeginController">
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="560.0" prefWidth="785.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="785.0" style="-fx-background-color: #ede7f6;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="fn-24" stylesheets="@homepage.css" text="00" textFill="#000063">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label styleClass="fn-24" stylesheets="@homepage.css" text=":" textFill="#000063">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="labelMin" styleClass="fn-24" stylesheets="@homepage.css" text="00" textFill="#000063">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label styleClass="fn-24" stylesheets="@homepage.css" text=":" textFill="#000063">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="zeroLabel" layoutX="742.0" layoutY="10.0" styleClass="fn-24" stylesheets="@homepage.css" text="0" textFill="#000063" />
+                  <Label fx:id="label" layoutX="10.0" layoutY="10.0" styleClass="fn-24" stylesheets="@homepage.css" text="0" textFill="#000063">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefWidth="40.0" style="-fx-background-color: #ede7f6;" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox prefWidth="40.0" style="-fx-background-color: #ede7f6;" BorderPane.alignment="TOP_RIGHT" />
+         </right>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="785.0" style="-fx-background-color: #ede7f6;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton contentDisplay="CENTER" onAction="#goBack" prefWidth="100.0" style="-fx-background-color: #d1c4e9;" styleClass="fn-18" stylesheets="@homepage.css" text="Go Back" textFill="#000063">
+                     <HBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="startStop" contentDisplay="CENTER" layoutX="372.0" layoutY="21.0" onAction="#startStop" prefWidth="100.0" style="-fx-background-color: #d1c4e9;" styleClass="fn-18" stylesheets="@homepage.css" text="End" textFill="#000063">
+                     <HBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>

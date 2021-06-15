@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.CareCornerController">
+   <children>
+      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="605.0" stylesheets="@scrollpane.css">
+         <content>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="605.0" style="-fx-background-color: #fce4ec;">
+               <children>
+                  <JFXButton alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button1" prefHeight="65.0" prefWidth="450.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="COVID-19 and Children" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/no-virus%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" layoutX="20.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button2" prefHeight="65.0" prefWidth="450.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Newborn Baby hacks" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/no-virus%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" layoutX="20.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button3" prefHeight="65.0" prefWidth="450.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Caring Newborn" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/no-virus%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" layoutX="20.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button4" prefHeight="65.0" prefWidth="450.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Raising a Child with Autism Spectrum Disorder" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/no-virus%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" layoutX="20.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button5" prefHeight="65.0" prefWidth="450.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Important Influence on Child Developement" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/no-virus%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" layoutX="20.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button6" prefHeight="65.0" prefWidth="450.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="The 3 Stages of Emotional Child development" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/no-virus%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button7" prefHeight="65.0" prefWidth="450.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="10 Baby Care skills" textFill="#42070b">
+                     <stylesheets>
+                        <URL value="@homepage.css" />
+                        <URL value="@scrollpane.css" />
+                     </stylesheets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/no-virus%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</StackPane>

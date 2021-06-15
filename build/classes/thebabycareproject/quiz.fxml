@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stackPane" prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.QuizController">
+   <children>
+      <VBox fx:id="vbox" alignment="CENTER" prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;">
+         <children>
+            <JFXTabPane stylesheets="@tabPane.css" tabMinWidth="290.0">
+               <tabs>
+                  <Tab text="Participate Quiz">
+                    <content>
+                      <AnchorPane prefHeight="560.0" prefWidth="605.0">
+                           <children>
+                              <ScrollPane prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;" stylesheets="@scrollpane.css">
+                                 <content>
+                                    <VBox alignment="TOP_CENTER" prefWidth="593.0" style="-fx-background-color: #fce4ec;">
+                                       <children>
+                                          <VBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="593.0">
+                                             <children>
+                                                <JFXButton alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#clickHere" stylesheets="@homepage.css" text="Click here to know more" textFill="#42070b" underline="true">
+                                                   <styleClass>
+                                                      <String fx:value="fn-14" />
+                                                      <String fx:value="hover-hand" />
+                                                   </styleClass>
+                                                </JFXButton>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" right="5.0" top="20.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <JFXButton alignment="TOP_LEFT" onAction="#button1" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Alphabet &amp; Number Quiz" textFill="#42070b">
+                                             <stylesheets>
+                                                <URL value="@homepage.css" />
+                                                <URL value="@scrollpane.css" />
+                                             </stylesheets>
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/toy_1.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton alignment="TOP_LEFT" onAction="#button2" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Math &amp; Geometry Quiz" textFill="#42070b">
+                                             <stylesheets>
+                                                <URL value="@homepage.css" />
+                                                <URL value="@scrollpane.css" />
+                                             </stylesheets>
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/toy_1.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton alignment="TOP_LEFT" onAction="#button3" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Science Quiz" textFill="#42070b">
+                                             <stylesheets>
+                                                <URL value="@homepage.css" />
+                                                <URL value="@scrollpane.css" />
+                                             </stylesheets>
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/toy_1.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton alignment="TOP_LEFT" onAction="#button4" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="General Knowledge Quiz" textFill="#42070b">
+                                             <stylesheets>
+                                                <URL value="@homepage.css" />
+                                                <URL value="@scrollpane.css" />
+                                             </stylesheets>
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/toy_1.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton alignment="TOP_LEFT" onAction="#button5" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Color &amp; Animal Quiz" textFill="#42070b">
+                                             <stylesheets>
+                                                <URL value="@homepage.css" />
+                                                <URL value="@scrollpane.css" />
+                                             </stylesheets>
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/toy_1.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton alignment="TOP_LEFT" onAction="#button6" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Riddles" textFill="#42070b">
+                                             <stylesheets>
+                                                <URL value="@homepage.css" />
+                                                <URL value="@scrollpane.css" />
+                                             </stylesheets>
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/toy_1.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton alignment="TOP_LEFT" onAction="#button7" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Random Quiz" textFill="#42070b">
+                                             <stylesheets>
+                                                <URL value="@homepage.css" />
+                                                <URL value="@scrollpane.css" />
+                                             </stylesheets>
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../image/toy_1.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </VBox.margin>
+                                             <styleClass>
+                                                <String fx:value="fn-18" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Take a Trip">
+                     <content>
+                        <AnchorPane prefHeight="560.0" prefWidth="605.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefWidth="605.0" style="-fx-background-color: #fce4ec;">
+                                 <children>
+                                    <VBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="593.0">
+                                       <children>
+                                          <JFXButton alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#clickHere" stylesheets="@homepage.css" text="Click here to know more" textFill="#42070b" underline="true">
+                                             <styleClass>
+                                                <String fx:value="fn-14" />
+                                                <String fx:value="hover-hand" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <JFXButton alignment="TOP_LEFT" onAction="#button8" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Multiple Choices" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/toy_1.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton alignment="TOP_LEFT" onAction="#button9" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Multiple Choices with Images" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/toy_1.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton alignment="TOP_LEFT" onAction="#button10" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Write Multiple Answers from Images" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/toy_1.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton alignment="TOP_LEFT" onAction="#button11" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text="Write Answer from Text or Images" textFill="#42070b">
+                                       <graphic>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/toy_1.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="fn-18" />
+                                          <String fx:value="hover-hand" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </VBox>
+   </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</StackPane>

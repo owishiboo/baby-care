@@ -1,0 +1,14 @@
+//will change color of the tet of button when mouse enters
+void change(JFXButton button){
+        button.setOnMouseEntered(e -> button.setStyle("-fx-text-fill: #ffffff;-fx-background-color: FFCED0;"));
+        button.setOnMouseExited(e -> button.setStyle("-fx-text-fill: #42070b; -fx-background-color: FFCED0;"));
+}
+
+
+//an array of button to change the color of text when mouse entered
+JFXButton[] ap = new JFXButton[]{button1,button2,button3,button4,button5,button6,button7,button8,button9,button10,
+        button11,button12,button13,button14,button15,button16,button17,button18,button19,button20,
+        button21,button22,button23,button24};
+        for (JFXButton ap1 : gl.ap) {
+            change(ap1);
+        }

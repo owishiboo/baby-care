@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.NutrimentController">
+   <children>
+      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;" stylesheets="@scrollpane.css">
+         <content>
+            <AnchorPane prefHeight="560.0" prefWidth="605.0" style="-fx-background-color: #fce4ec;">
+               <children>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="605.0" style="-fx-background-color: #fce4ec;">
+                     <children>
+                        <TitledPane animated="false" expanded="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="605.0" style="-fx-background-color: FC9D9D;" text="Get chart for different values:">
+                           <content>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="605.0" style="-fx-background-color: #fce4ec;">
+                                 <children>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="605.0" stylesheets="@tiledpane.css">
+                                       <children>
+                                          <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="605.0">
+                                             <children>
+                                                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="fn-18" stylesheets="@homepage.css" text="Age:" textFill="#42070b" />
+                                                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="fn-14" stylesheets="@homepage.css" text="Year" textFill="#42070b">
+                                                   <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <ChoiceBox fx:id="ageChoiceBox1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="90.0" stylesheets="@choicebox.css">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </ChoiceBox>
+                                                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="fn-14" stylesheets="@homepage.css" text="Months" textFill="#42070b">
+                                                   <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <ChoiceBox fx:id="ageChoiceBox2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="90.0" stylesheets="@choicebox.css">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </ChoiceBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="615.0">
+                                             <children>
+                                                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="fn-18" stylesheets="@homepage.css" text="Nutritious Status:" textFill="#42070b" />
+                                                <ChoiceBox fx:id="statusChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" stylesheets="@choicebox.css">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </ChoiceBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="615.0">
+                                             <children>
+                                                <JFXButton maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#changeDietPlan" style="-fx-background-color: FFB6B9;" styleClass="fn-16" stylesheets="@homepage.css" text="Change diet plan" textFill="#42070b" />
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <stylesheets>
+                              <URL value="@tiledpane.css" />
+                              <URL value="@homepage.css" />
+                              <URL value="@choicebox.css" />
+                           </stylesheets>
+                           <styleClass>
+                              <String fx:value="fn-14" />
+                              <String fx:value="hover-hand" />
+                           </styleClass>
+                        </TitledPane>
+                        <JFXButton fx:id="button1" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button1" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Daily Diet Chart" textFill="#42070b">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/001-healthy-food.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <styleClass>
+                              <String fx:value="fn-18" />
+                              <String fx:value="hover-hand" />
+                           </styleClass>
+                        </JFXButton>
+                        <JFXButton fx:id="button2" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button2" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: FFCED0;" stylesheets="@homepage.css" text=" Weekly Diet Chart" textFill="#42070b">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/002-diet.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="fn-18" />
+                              <String fx:value="hover-hand" />
+                           </styleClass>
+                        </JFXButton>
+                        <JFXButton fx:id="button3" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button3" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Special Care" textFill="#42070b">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/004-pacifier.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <styleClass>
+                              <String fx:value="fn-18" />
+                              <String fx:value="hover-hand" />
+                           </styleClass>
+                        </JFXButton>
+                        <JFXButton fx:id="button4" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button4" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Restrictions" textFill="#42070b">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/001-no-food.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <styleClass>
+                              <String fx:value="fn-18" />
+                              <String fx:value="hover-hand" />
+                           </styleClass>
+                        </JFXButton>
+                        <JFXButton fx:id="button5" alignment="TOP_LEFT" layoutX="20.0" layoutY="326.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#button5" prefHeight="60.0" prefWidth="400.0" ripplerFill="#42070b" style="-fx-background-color: FFCED0;" text="Weight Issues" textFill="#42070b">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/011-weight-scale.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <stylesheets>
+                              <URL value="@homepage.css" />
+                              <URL value="@scrollpane.css" />
+                           </stylesheets>
+                           <styleClass>
+                              <String fx:value="fn-18" />
+                              <String fx:value="hover-hand" />
+                           </styleClass>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>

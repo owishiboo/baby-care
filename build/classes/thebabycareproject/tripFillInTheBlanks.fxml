@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stackPane" prefHeight="560.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.TripFillInTheBlanksController">
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="560.0" prefWidth="785.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="785.0" style="-fx-background-color: FBE9E7;" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <VBox prefWidth="40.0" style="-fx-background-color: FBE9E7;" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox prefWidth="40.0" style="-fx-background-color: FBE9E7;" BorderPane.alignment="TOP_RIGHT" />
+         </right>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="785.0" style="-fx-background-color: FBE9E7;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton alignment="CENTER" onAction="#goBack" onMouseClicked="#goBack" prefWidth="100.0" style="-fx-background-color: FFCCBC;" stylesheets="@homepage.css" text="Go Back">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <VBox alignment="CENTER" prefHeight="470.0" prefWidth="705.0" BorderPane.alignment="CENTER_LEFT">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label styleClass="fn-18" stylesheets="@homepage.css" text="Select any:">
+                           <VBox.margin>
+                              <Insets left="100.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <JFXRadioButton fx:id="r1" styleClass="fn-18" stylesheets="@homepage.css" text="Alphabet &amp; Number">
+                           <VBox.margin>
+                              <Insets left="100.0" top="20.0" />
+                           </VBox.margin>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="toggleChoice" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="r2" styleClass="fn-18" stylesheets="@homepage.css" text="Math &amp; Geometry" toggleGroup="$toggleChoice">
+                           <VBox.margin>
+                              <Insets left="100.0" top="20.0" />
+                           </VBox.margin>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="r3" styleClass="fn-18" stylesheets="@homepage.css" text="Color &amp; Animal" toggleGroup="$toggleChoice">
+                           <VBox.margin>
+                              <Insets left="100.0" top="20.0" />
+                           </VBox.margin>
+                        </JFXRadioButton>
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="takeTrip" alignment="CENTER" onAction="#takeTrip" prefWidth="100.0" style="-fx-background-color: FFCCBC;" stylesheets="@homepage.css" text="Take Trip">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <Label fx:id="warn" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

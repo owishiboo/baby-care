@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.FoodChartController">
+   <children>
+      <BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: #fce4ec;">
+         <left>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="180.0" style="-fx-background-color: FFCED0;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="button1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#careCorner" prefHeight="65.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" stylesheets="@homepage.css" text="Caution &amp; Care" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="button2" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#careArticle" prefHeight="65.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" stylesheets="@homepage.css" text="Care Blogs" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="30.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="button3" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#growthCharts" prefHeight="65.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" stylesheets="@homepage.css" text="Growth-charts" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="30.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="button4" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#growthCalculator" prefHeight="65.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" stylesheets="@homepage.css" text="Growth Calculator" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="30.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="button5" alignment="CENTER" layoutX="10.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#autism" prefHeight="65.0" prefWidth="170.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" stylesheets="@homepage.css" text="Autism" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="30.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#goBack" prefHeight="65.0" prefWidth="170.0" style="-fx-background-color: FC9D9D;" stylesheets="@homepage.css" text="Go Back" textFill="#42070b">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="30.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>

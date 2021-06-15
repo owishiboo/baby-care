@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: #fce4ec;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.HomePageController">
+   <children>
+      <ImageView fitHeight="560.0" fitWidth="785.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/page.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0" StackPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="220.0">
+               <children>
+                  <JFXButton alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#profileSettings" prefWidth="200.0" stylesheets="@homepage.css" text="Profile Settings" textFill="#42070b">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/log%202%20dark.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="button1" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#bmi" prefHeight="160.0" prefWidth="160.0" ripplerFill="#42070b" style="-fx-background-color: #FC9D9D;" stylesheets="@homepage.css" text="Food &amp; &#10;Nutrition" textFill="#42070b">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-20" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Diet.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="button3" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#foodChart" prefHeight="160.0" prefWidth="160.0" ripplerFill="#42070b" style="-fx-background-color: #FC9D9D;" stylesheets="@homepage.css" text="Growth&#10;&amp; Immunity" textFill="#42070b">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-20" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0">
+                           <image>
+                              <Image url="@../image/BMI.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="220.0">
+               <children>
+                  <JFXButton alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#logOut" prefWidth="200.0" stylesheets="@homepage.css" text="Logout" textFill="#42070b">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/log%201%20light.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fn-18" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="button2" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#vaccineReminder" prefHeight="160.0" prefWidth="160.0" ripplerFill="#42070b" style="-fx-background-color: #FC9D9D;" stylesheets="@homepage.css" text="Reminder &amp;&#10;Notifications" textFill="#42070b">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-20" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Vaccine.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="button4" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#funList" prefHeight="160.0" prefWidth="160.0" ripplerFill="#42070b" style="-fx-background-color: #FC9D9D;" stylesheets="@homepage.css" text="Edu-corner" textFill="#42070b">
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="fn-20" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/toy.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

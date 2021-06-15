@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="560.0" prefWidth="785.0" style="-fx-background-color: FCE4EC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.VerificationController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="785.0">
+         <children>
+            <ImageView fitHeight="190.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/019-child-2.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="label1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" styleClass="fn-18" stylesheets="@homepage.css" text="We've sent an verification code in your email. Please enter it below." textFill="#42070b">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="code" alignment="CENTER" focusColor="#42070b" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="Verification code" styleClass="fn-18" stylesheets="@homepage.css" unFocusColor="#ffb6b9">
+               <VBox.margin>
+                  <Insets left="230.0" right="230.0" top="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <Label fx:id="verification_label" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="fn-18" stylesheets="@homepage.css" textFill="RED">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#verify" prefHeight="40.0" ripplerFill="#42070b" style="-fx-background-color: FC9D9D;" stylesheets="@homepage.css" text="Get your account" textFill="#42070b">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="fn-18" />
+                  <String fx:value="hover-hand" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#goBack" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: FC9D9D;" stylesheets="@homepage.css" text="Go back" textFill="#42070b">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="fn-18" />
+                  <String fx:value="hover-hand" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

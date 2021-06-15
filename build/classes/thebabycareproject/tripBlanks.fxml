@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" prefHeight="470.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebabycareproject.TripFillInTheBlanksController">
+   <children>
+      <VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="470.0" prefWidth="705.0">
+         <children>
+            <VBox fx:id="vbox1" alignment="CENTER" prefHeight="150.0" prefWidth="705.0" style="-fx-background-color: FFCCBC;" styleClass="fn-18" stylesheets="@homepage.css">
+               <children>
+                  <Label fx:id="labelQues" styleClass="fn-18" stylesheets="@homepage.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="150.0" prefWidth="705.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="i1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l1" styleClass="fn-18" stylesheets="@homepage.css">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="43.0" layoutY="10.0">
+                     <children>
+                        <ImageView fx:id="i2" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l2" styleClass="fn-18" stylesheets="@homepage.css">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <ImageView fx:id="i3" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l3" styleClass="fn-18" stylesheets="@homepage.css">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <JFXButton fx:id="next" alignment="CENTER" onAction="#next" style="-fx-background-color: FFCCBC;" stylesheets="@homepage.css" text="Next">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="fn-18" />
+                  <String fx:value="hover-hand" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
