@@ -16,10 +16,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import static thebabycareproject.QuizSelectController.quesSelect;
 import static thebabycareproject.QuizHandle.i;
 
@@ -44,7 +42,10 @@ public class TripSelect1Controller implements Initializable {
     public void todo(){
         
             labelQues.setText(Integer.toString(i+1)+".   "+quesSelect.get(i).get(0));
-            //t1.setSelected(true);
+            t1.setSelected(true);
+            t2.setSelected(false);
+            t3.setSelected(false);
+            t4.setSelected(false);
             im.setImage(quesSelect.get(i).get(1), i1);
             im.setImage(quesSelect.get(i).get(2), i2);
             im.setImage(quesSelect.get(i).get(3), i3);
