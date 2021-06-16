@@ -168,34 +168,46 @@ public class NutrimentController implements Initializable {
                 break;
         }
         switch (type) {
+            case "4-6/":
+                weekType="";
+                break;
             case "7-9/":
                 if(null==Integer.valueOf(s2))weekType="9";
+                else if(Integer.parseInt(s2)==0)weekType="9";
                 else switch (Integer.valueOf(s2)) {
-            case 7:
-                weekType="7";
-                break;
-            case 8:
-                weekType="8";
-                break;
-            default:
-                weekType="9";
-                break;
-        }
+                case 7:
+                    weekType="7";
+                    break;
+                case 8:
+                    weekType="8";
+                    break;
+                default:
+                    weekType="9";
+                    break;
+                }
                 break;
             case "10-12/":
                 if(null==Integer.valueOf(s2))weekType="12";
+                else if(Integer.parseInt(s2)==0)weekType="12";
                 else switch (Integer.valueOf(s2)) {
-            case 10:
-                weekType="10";
+                case 10:
+                    weekType="10";
+                    break;
+                case 11:
+                    weekType="11";
+                    break;
+                default:
+                    weekType="12";
+                    break;
+                }
                 break;
-            case 11:
-                weekType="11";
+            case "13-18/":
+                weekType="";
                 break;
-            default:
-                weekType="12";
+            case "19-24/":
+                weekType="";
                 break;
-        }
-                break;
+                
         }
     }
 
