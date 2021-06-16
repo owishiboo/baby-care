@@ -4,7 +4,6 @@
 <?import java.lang.String?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -35,7 +34,7 @@
                               <URL value="@scrollpane.css" />
                            </stylesheets>
                            <styleClass>
-                              <String fx:value="fn-24" />
+                              <String fx:value="fn-18" />
                               <String fx:value="hover-hand" />
                            </styleClass>
                         </JFXButton>
@@ -46,9 +45,6 @@
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
                         </ImageView>
                      </children>
                      <VBox.margin>
@@ -63,7 +59,7 @@
                               <URL value="@scrollpane.css" />
                            </stylesheets>
                            <styleClass>
-                              <String fx:value="fn-24" />
+                              <String fx:value="fn-18" />
                               <String fx:value="hover-hand" />
                            </styleClass>
                         </JFXButton>
@@ -74,9 +70,6 @@
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
                         </ImageView>
                      </children>
                      <VBox.margin>
@@ -91,7 +84,7 @@
                               <URL value="@scrollpane.css" />
                            </stylesheets>
                            <styleClass>
-                              <String fx:value="fn-24" />
+                              <String fx:value="fn-18" />
                               <String fx:value="hover-hand" />
                            </styleClass>
                         </JFXButton>
@@ -102,9 +95,6 @@
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
                         </ImageView>
                      </children>
                      <VBox.margin>
@@ -119,7 +109,7 @@
                               <URL value="@scrollpane.css" />
                            </stylesheets>
                            <styleClass>
-                              <String fx:value="fn-24" />
+                              <String fx:value="fn-18" />
                               <String fx:value="hover-hand" />
                            </styleClass>
                         </JFXButton>
@@ -130,9 +120,6 @@
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
                         </ImageView>
                      </children>
                      <VBox.margin>
@@ -147,7 +134,7 @@
                               <URL value="@scrollpane.css" />
                            </stylesheets>
                            <styleClass>
-                              <String fx:value="fn-24" />
+                              <String fx:value="fn-18" />
                               <String fx:value="hover-hand" />
                            </styleClass>
                         </JFXButton>
@@ -158,9 +145,6 @@
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
                         </ImageView>
                      </children>
                      <VBox.margin>
@@ -175,7 +159,7 @@
                               <URL value="@scrollpane.css" />
                            </stylesheets>
                            <styleClass>
-                              <String fx:value="fn-24" />
+                              <String fx:value="fn-18" />
                               <String fx:value="hover-hand" />
                            </styleClass>
                         </JFXButton>
@@ -186,9 +170,6 @@
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
                         </ImageView>
                      </children>
                      <VBox.margin>
@@ -203,7 +184,7 @@
                               <URL value="@scrollpane.css" />
                            </stylesheets>
                            <styleClass>
-                              <String fx:value="fn-24" />
+                              <String fx:value="fn-18" />
                               <String fx:value="hover-hand" />
                            </styleClass>
                         </JFXButton>
@@ -214,9 +195,6 @@
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
                         </ImageView>
                      </children>
                      <VBox.margin>
@@ -231,7 +209,7 @@
                               <URL value="@scrollpane.css" />
                            </stylesheets>
                            <styleClass>
-                              <String fx:value="fn-24" />
+                              <String fx:value="fn-18" />
                               <String fx:value="hover-hand" />
                            </styleClass>
                         </JFXButton>
@@ -242,9 +220,6 @@
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
                         </ImageView>
                      </children>
                      <VBox.margin>
@@ -259,7 +234,7 @@
                               <URL value="@scrollpane.css" />
                            </stylesheets>
                            <styleClass>
-                              <String fx:value="fn-24" />
+                              <String fx:value="fn-18" />
                               <String fx:value="hover-hand" />
                            </styleClass>
                         </JFXButton>
@@ -270,9 +245,6 @@
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
                         </ImageView>
                      </children>
                      <VBox.margin>
@@ -287,7 +259,7 @@
                               <URL value="@scrollpane.css" />
                            </stylesheets>
                            <styleClass>
-                              <String fx:value="fn-24" />
+                              <String fx:value="fn-18" />
                               <String fx:value="hover-hand" />
                            </styleClass>
                         </JFXButton>
@@ -298,9 +270,6 @@
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
                         </ImageView>
                      </children>
                      <VBox.margin>
