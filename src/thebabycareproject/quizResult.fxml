@@ -13,7 +13,7 @@
          <children>
             <HBox alignment="CENTER" layoutX="10.0" layoutY="109.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="785.0">
                <children>
-                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="fn-24" stylesheets="@homepage.css" text="Required Time: ">
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="fn-24" stylesheets="@homepage.css" text="Total Time: ">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
