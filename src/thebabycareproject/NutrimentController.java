@@ -158,6 +158,7 @@ public class NutrimentController implements Initializable {
                 button2.setDisable(true);
                 break;
         }
+        weightType="o";
         switch (s3) {
             case "Underweight":
                 weightType="u";
@@ -166,6 +167,8 @@ public class NutrimentController implements Initializable {
                 weightType="h";
                 button5.setDisable(true);
                 break;
+            default : 
+                weightType="o";
         }
         switch (type) {
             case "4-6/":
